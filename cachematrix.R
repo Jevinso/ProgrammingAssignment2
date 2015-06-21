@@ -1,4 +1,7 @@
-## Special vector used to cache the inverse matrix
+## This functions is used to cache the inverse of a 
+## matrix to reduce computation load
+
+## This function creates the special matrix object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -17,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Return a matrix that is the inverse of 'x' via the cache if it has been previous calculated.
+## Return a matrix that is the inverse of 'x' via 
+## the cache if it has been previous calculated
 
 cacheSolve <- function(x, ...) {
   
